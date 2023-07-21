@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: movies-restfull-application
+  datasource:
+    url: jdbc:mysql://localhost/be_employer?useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8080
