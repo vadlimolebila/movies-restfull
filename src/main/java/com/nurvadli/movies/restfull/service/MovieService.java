@@ -12,6 +12,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+import static com.nurvadli.movies.restfull.utils.DateTimeUtil.toDateTimeFormat;
+
 /**
  * @author Nurvadli
  */
@@ -41,6 +43,8 @@ public class MovieService {
         movie.setDescription(movieDto.getDescription());
         movie.setRating(movieDto.getRating());
         movie.setImage(movieDto.getImage());
+        movie.setCreatedAt(toDateTimeFormat(movieDto.getCreatedAt()));
+        movie.setUpdatedAt(toDateTimeFormat(movieDto.getUpdatedAt()));
         movieRepository.save(movie);
     }
 
@@ -50,6 +54,8 @@ public class MovieService {
         movie.setDescription(movieDto.getDescription());
         movie.setRating(movieDto.getRating());
         movie.setImage(movieDto.getImage());
+        movie.setCreatedAt(toDateTimeFormat(movieDto.getCreatedAt()));
+        movie.setUpdatedAt(toDateTimeFormat(movieDto.getUpdatedAt()));
         movieRepository.save(movie);
     }
 
