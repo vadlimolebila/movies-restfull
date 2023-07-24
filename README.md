@@ -5,7 +5,7 @@
 ### 1. You can clone it from github by running following command
 
 ```
-  $ git clone https://github.com/vadlymolebila/movies-restfull.git
+  $ git clone https://github.com/vadlimolebila/movies-restfull.git
 ```
 
 ### 2. Import project into IntelliJ IDE
